@@ -1,0 +1,39 @@
+步骤2：建立工程
+
+友情提醒：请原谅我对webStorm还不太熟悉，我自己也才刚安装一天，还处于学习阶段，所以在DOS操作吧！cmd进入DOS，感觉还是挺酷的！
+
+1）在DOS下cd 进入到你想要创建项目的路径。 
+2）mkdir yzx_homework （创建一个yzx_homework文件夹） 
+3）cd yzx_homework 
+4) npm init （初始化工程）
+
+此时需要填写一些项目信息，你可以根据情况填写，当然也可以一路回车。创建完项目后，会生成一个package.json的文件。该文件包含了项目的基本信息。
+
+5）安装第三方包（后面程序会直接调用包的模块）
+
+说明：由于http模块、fs模块都是内置的包，因此不需要额外添加。
+
+这里安装cheerio包，和request包。
+
+在dos中，cd进入spider文件夹，然后 
+npm install cheerio –save
+
+安装完cheerio包后，继续安装request包， npm install request –save
+
+说明：npm（nodejs package manager），nodejs包管理器； 
+–save的目的是将项目对该包的依赖写入到package.json文件中。
+
+6）在spider文件夹下
+
+创建子文件夹data（用于存放所抓取的新闻文本内容）
+创建子文件夹image（用于存放所抓取的图片资源）
+创建一个yzx_spider.js文件
+
+
+步骤三：”talk is cheep，show me the code .”
+
+打开yzx_spider.js，并一行一行的敲代码。
+
+
+
+node yzx_spider.js
